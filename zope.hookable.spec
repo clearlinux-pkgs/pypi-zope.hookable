@@ -4,7 +4,7 @@
 #
 Name     : zope.hookable
 Version  : 4.0.4
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/e0/ac/90faaf2d8b7d11cca374632826f52b55587534fcb6786e41781a85dc448f/zope.hookable-4.0.4.tar.gz
 Source0  : https://pypi.python.org/packages/e0/ac/90faaf2d8b7d11cca374632826f52b55587534fcb6786e41781a85dc448f/zope.hookable-4.0.4.tar.gz
 Summary  : Zope hookable
