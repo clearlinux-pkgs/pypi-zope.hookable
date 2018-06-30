@@ -4,7 +4,7 @@
 #
 Name     : zope.hookable
 Version  : 4.2.0
-Release  : 12
+Release  : 13
 URL      : https://pypi.debian.net/zope.hookable/zope.hookable-4.2.0.tar.gz
 Source0  : https://pypi.debian.net/zope.hookable/zope.hookable-4.2.0.tar.gz
 Summary  : Zope hookable
@@ -65,14 +65,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1529092034
+export SOURCE_DATE_EPOCH=1530331917
 python3 setup.py build -b py3
 
 %check
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-PYTHONPATH=%{buildroot}/usr/lib/python3.6/site-packages python3 setup.py test
+PYTHONPATH=%{buildroot}/usr/lib/python3.7/site-packages python3 setup.py test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/zope.hookable
