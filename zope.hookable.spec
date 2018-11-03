@@ -4,25 +4,20 @@
 #
 Name     : zope.hookable
 Version  : 4.2.0
-Release  : 17
+Release  : 18
 URL      : https://pypi.debian.net/zope.hookable/zope.hookable-4.2.0.tar.gz
 Source0  : https://pypi.debian.net/zope.hookable/zope.hookable-4.2.0.tar.gz
 Summary  : Zope hookable
 Group    : Development/Tools
 License  : ZPL-2.1
-Requires: zope.hookable-python3
-Requires: zope.hookable-license
-Requires: zope.hookable-python
-Requires: Sphinx
-Requires: coverage
+Requires: zope.hookable-license = %{version}-%{release}
+Requires: zope.hookable-python = %{version}-%{release}
+Requires: zope.hookable-python3 = %{version}-%{release}
 Requires: setuptools
-Requires: zope.testing
-BuildRequires : pbr
-BuildRequires : pip
+BuildRequires : buildreq-distutils3
 BuildRequires : pluggy
 BuildRequires : py-python
 BuildRequires : pytest
-BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : tox
 BuildRequires : virtualenv
@@ -42,7 +37,7 @@ license components for the zope.hookable package.
 %package python
 Summary: python components for the zope.hookable package.
 Group: Default
-Requires: zope.hookable-python3
+Requires: zope.hookable-python3 = %{version}-%{release}
 
 %description python
 python components for the zope.hookable package.
@@ -65,8 +60,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530331917
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1541281369
+python3 setup.py build
 
 %check
 export http_proxy=http://127.0.0.1:9/
@@ -75,9 +70,9 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 PYTHONPATH=%{buildroot}/usr/lib/python3.7/site-packages python3 setup.py test
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/zope.hookable
-cp LICENSE.txt %{buildroot}/usr/share/doc/zope.hookable/LICENSE.txt
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/zope.hookable
+cp LICENSE.txt %{buildroot}/usr/share/package-licenses/zope.hookable/LICENSE.txt
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -86,8 +81,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/zope.hookable/LICENSE.txt
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/zope.hookable/LICENSE.txt
 
 %files python
 %defattr(-,root,root,-)
