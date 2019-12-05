@@ -4,7 +4,7 @@
 #
 Name     : zope.hookable
 Version  : 4.2.0
-Release  : 21
+Release  : 22
 URL      : https://pypi.debian.net/zope.hookable/zope.hookable-4.2.0.tar.gz
 Source0  : https://pypi.debian.net/zope.hookable/zope.hookable-4.2.0.tar.gz
 Summary  : Zope hookable
