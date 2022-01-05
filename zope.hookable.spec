@@ -4,7 +4,7 @@
 #
 Name     : zope.hookable
 Version  : 5.1.0
-Release  : 41
+Release  : 42
 URL      : https://files.pythonhosted.org/packages/10/6d/47d817b01741477ce485f842649b02043639d1f9c2f50600052766c99821/zope.hookable-5.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/10/6d/47d817b01741477ce485f842649b02043639d1f9c2f50600052766c99821/zope.hookable-5.1.0.tar.gz
 Summary  : Zope hookable
@@ -13,12 +13,11 @@ License  : ZPL-2.1
 Requires: zope.hookable-license = %{version}-%{release}
 Requires: zope.hookable-python = %{version}-%{release}
 Requires: zope.hookable-python3 = %{version}-%{release}
-Requires: setuptools
 BuildRequires : buildreq-distutils3
 BuildRequires : pluggy
 BuildRequires : py-python
+BuildRequires : pypi(setuptools)
 BuildRequires : pytest
-BuildRequires : setuptools
 BuildRequires : tox
 BuildRequires : virtualenv
 
@@ -63,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1630688572
+export SOURCE_DATE_EPOCH=1641415588
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
