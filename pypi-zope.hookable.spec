@@ -7,7 +7,7 @@
 #
 Name     : pypi-zope.hookable
 Version  : 5.4
-Release  : 57
+Release  : 58
 URL      : https://files.pythonhosted.org/packages/26/ce/ba1346f4c078321683c0118fc7706287493294d1cb637bf356be94de8c40/zope.hookable-5.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/26/ce/ba1346f4c078321683c0118fc7706287493294d1cb637bf356be94de8c40/zope.hookable-5.4.tar.gz
 Source1  : https://files.pythonhosted.org/packages/26/ce/ba1346f4c078321683c0118fc7706287493294d1cb637bf356be94de8c40/zope.hookable-5.4.tar.gz.asc
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685545804
+export SOURCE_DATE_EPOCH=1695159260
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
