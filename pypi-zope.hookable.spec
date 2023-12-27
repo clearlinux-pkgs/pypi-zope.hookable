@@ -5,7 +5,7 @@
 #
 Name     : pypi-zope.hookable
 Version  : 6.0
-Release  : 60
+Release  : 61
 URL      : https://files.pythonhosted.org/packages/78/ce/4eeb5f4d12bfb6ba46584c3e7cd0b8f29264b10a9159eaf06d90f71a22a9/zope.hookable-6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/78/ce/4eeb5f4d12bfb6ba46584c3e7cd0b8f29264b10a9159eaf06d90f71a22a9/zope.hookable-6.0.tar.gz
 Summary  : Zope hookable
